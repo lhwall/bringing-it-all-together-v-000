@@ -66,10 +66,15 @@ end
     if return_from_db[0]
       dog = self.find_by_id(return_from_db.flatten[0])
     else 
+<<<<<<< HEAD
       dog = self.new(name: name, breed: breed)
       dog.save
+=======
+      dog = self.find_by_id(return_from_db.flatten[0])
+>>>>>>> 7b086a0038b2f096fb21b6e5d49164bf3324dbd0
     end
     dog
+    binding.pry
   end
     
  def self.find_by_name(name)
